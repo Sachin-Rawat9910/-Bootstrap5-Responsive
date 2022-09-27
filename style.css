@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-family: 'Barlow' , sans-serif !important;
+    line-height: 1.7 !important;
+    color: #515671 !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700 !important;
+    color: #092032 !important;
+}
+
+a{
+    display: block;
+    color: #092032 !important;
+    text-decoration: none !important;
+    font-weight: 500;
+    transition: all .4s ease;
+    position: relative !important;
+}
+
+img{
+    width: 100% !important;
+}
+
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* ============NAVEBAR==========================
+============== */
+.top-nav{
+    background-color: #ff4d29;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.top-nav p{
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 16px;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.top-nav .box-icon,
+.top-nav p{
+    vertical-align: middle;
+}
+
+.social-link a{
+width: 34px;
+height: 34px;
+background-color: rgba(255, 255, 255, 0.4);
+display: inline-flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+border-radius: 50%;
+font-size: 15px;
+color: #fff !important;
+}
+
+.social-link a:hover:first-child{
+    color: #fff !important;
+    transition: all 0.5s ease-in-out !important;
+    background-color: rgb(0, 25, 117);
+}
+
+.social-link a:hover:nth-child(2){
+    color: #fff !important;
+    transition: all 0.5s ease-in-out !important;
+    background-color: rgb(4, 105, 213);
+}
+
+.social-link a:hover:nth-child(3){
+    color: rgb(24, 24, 24) !important;
+    transition: all 0.5s ease-in-out !important;
+    background-color: rgb(249, 249, 249);
+}
+
+.social-link a:hover:last-child{
+    color: #fff !important;
+    transition: all 0.5s ease-in-out !important;
+    background-color: rgb(255, 17, 17);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link .activ{
+color: #ff4d29 !important;
+}
+
+
+ul li{
+    margin-right: 19px;
+}
+
+/* ul li a::before{
+    content: '';
+    height: 2px;
+    width:0;
+    background-color: #ff4d29;
+    position: absolute;
+    display: none;
+    transition: all 0.5s !important;
+}
+
+ul li a:hover::before{
+    width:100%;
+    content: '';
+    height: 2px;
+    background-color: #ff4d29;
+    position: absolute;
+    display: block;
+    transition: all 0.5s  !important;
+} */
+
+
+.navbar{
+    box-shadow: 0px 6px 30px rgba(0,0,0,0.08);
+}
+
+.navbar-brand{
+    font-weight: 700 !important;
+    font-size: 26px !important;
+    color: #092032;
+}
+
+.btn{
+    padding: 9px 24px;
+    font-weight: 500 !important;
+}
+
+.btn-brand{
+    background-color: #ff4d29 !important;
+    color: #fff !important;
+    border-color:#ff4d29 !important;
+}
+
+.btn-brand:focus{
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+    border: none;
+}
+.navbar-toggler span{
+    color: #ff4d29 !important;
+}
+
+.btn-brand:hover{
+    background: transparent !important;
+    border: 1px solid #ff4d29 !important;
+    color: #ff4d29 !important;
+}
+
+
+/* ============SLIDER==========================
+============== */
+
+.slider{
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(/img/bg_banner2.jpg);
+}
+
+.slider2{
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(/img/bg_banner1.jpg);
+}
+
+
+.slider .btn{
+    padding: 11px 29px;
+    font-weight: 600 !important;
+    transition: all .4s ease-in-out !important;
+}
+
+.btn-outline-light{
+    border:1px solid #ff4d29 !important;
+    color: #ff4d29 !important;
+    transition: all .4s ease-in-out !important;
+}
+
+.btn-outline-light:hover {
+background-color: #ff4d29 !important;
+border:1px solid #ff4d29 !important;
+color: #fff !important;
+}
+
+
+
+#hero-slider{
+    position: relative;
+}
+
+
+#hero-slider .owl-next
+{
+background-color: rgba(255, 254, 254, 0.6);
+color: #ff4d29;
+top:50%;
+right: 10px;
+width: 50px !important;
+height: 50px !important;
+border-radius: 50%;
+position: absolute;
+}
+
+#hero-slider .owl-prev
+{
+background-color: rgba(255, 254, 254, 0.6);
+color: #ff4d29;
+top:50%;
+left: 10px;
+width: 50px !important;
+height: 50px !important;
+border-radius: 50%;
+position: absolute;
+}
+
+#hero-slider .owl-next:hover,#hero-slider .owl-prev:hover{
+    background-color: #ff4d29;
+    color: #092032;
+    transition: all .5s;
+}
+
+
+
+/* ============ABOUT==========================
+============== */
+
+section{
+    padding-top: 100px !important;
+    padding-bottom: 20px !important;
+}
+
+.info-box{
+    display: flex;
+    align-items: center;
+}
+
+.info-box img{
+    width: 90px !important;
+    margin-right: 18px;
+}
+
+
+#miltstone{
+    margin-top: 100px !important;
+    padding-bottom: 100px !important;
+    background:linear-gradient(rgba(255, 77, 41, 0.4),rgba(255, 77, 41, 0.4)) ,url(/img/bg_banner1.jpg) !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.display-4{
+    font-weight: 700 !important;
+}
+
+
+
+/* ============SERVICES==========================
+============== */
+
+.intro h6{
+    color: #ff4d29 !important;
+    font-weight: 400 !important;
+}
+
+.intro h1{
+    color: #092032;
+}
+
+.intro p{
+    max-width: 500px;
+    margin: auto;
+}
+
+.service-box{
+    padding: 34px !important;
+    box-shadow: 0px 6px 30px rgba(0,0,0,0.08) !important;
+    text-align: center;
+}
+
+.service-box img{
+    width: unset !important;
+}
+
+.service-box h5{
+    margin-top: 34px;
+    margin-bottom: 15px;
+}
+
+
+
+/* ============WORK==========================
+============== */
+
+.project{
+    position: relative;
+}
+
+.project .overlay{
+    background: linear-gradient(to bottom, rgba(9, 32, 50, 0.0), rgba(9, 32, 50, 0.8)) !important;
+    position: absolute;
+    width:100%;
+    bottom: 0;
+    left: 0;
+    height:240px;
+}
+
+
+.project .content{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 32px;
+}
+
+.content h1,h6{
+    color: #fff !important;
+}
+
+.content h6::before{
+    content: '';
+    height: 2px;
+    width: 25px;
+    background-color: #ff4d29;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.content h6::after{
+    content: '';
+    height: 2px;
+    width: 25px;
+    background-color: #ff4d29;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px
+}
+
+#project-slider{
+    position: relative;
+}
+
+
+#project-slider .owl-next
+{
+background-color: rgba(255, 254, 254, 0.6);
+color: #ff4d29;
+top:50%;
+right: 10px;
+width: 50px !important;
+height: 50px !important;
+border-radius: 50%;
+position: absolute;
+}
+
+#project-slider .owl-prev
+{
+background-color: rgba(255, 254, 254, 0.6);
+color: #ff4d29;
+top:50%;
+left: 10px;
+width: 50px !important;
+height: 50px !important;
+border-radius: 50%;
+position: absolute;
+}
+
+#project-slider .owl-next:hover,#project-slider .owl-prev:hover{
+    background-color: #ff4d29;
+    color: #092032;
+    transition: all .5s;
+}
+
+
+/* ============TEAM==========================
+============== */
+.team-member .img-wrapper{
+    position: relative !important;
+    overflow: hidden;
+}
+
+.team-member .overlay{
+    position: absolute !important;
+    width: 100%;
+    top: -10%;
+    left: 0;
+    height: 100%;
+    background: rgba(255, 77, 41, 0.533) !important;
+    transition: all .4s ease !important;
+    opacity: 0;
+}
+
+.team-member .social-link{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .4s ease !important;
+    opacity: 0;
+}
+
+.team-member:hover  .social-link{
+    opacity: 1;
+    top: 50%;
+} 
+
+.team-member:hover .overlay{
+    opacity: 1;
+    top: 0;
+} 
+
+
+/* ============REVIEW==========================
+============== */
+
+#review{
+    background:linear-gradient(rgba(9, 32, 50, 0.8), rgba(9, 32, 50, 0.8)) ,url(/img/bg_banner1.jpg) !important;
+   height: 500px !important;
+   width: 100% !important;
+   background-position: center !important;
+   background-size: cover !important;
+}
+
+.review{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.review img{
+    width: 85px !important;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.review h4{
+    margin-top: 20px;
+}
+
+.review p{
+    margin-top: 20px;
+}
+
+.review h4,.review p{
+    color: #fff !important;
+}
+
+small{
+    color: #ff4d29;
+}
+
+.owl-dot.active span{
+    background-color: #ff4d29 !important;
+}
+
+
+/* ============BLOG==========================
+============== */
+
+ .blog-post{
+    position: relative;
+ }
+
+ .blog-post .tag{
+    position: absolute !important;
+    top: 20px;
+    left: 8px;
+    padding: 4px 12px;
+    background-color: #ff4d29;
+    color: #fff !important;
+    border-radius: 30px;
+ }
+
+ .blog-post img{
+    margin-bottom: 20px;
+ }
+
+ .blog-post h5{
+    margin-top: 12px;
+    margin-bottom: 12px;
+ }
+
+ .blog-post small{
+    text-decoration: underline;
+    cursor: pointer;
+    text-transform: uppercase;
+ }
+
+
+ /* ============FOOTER==========================
+============== */
+
+ footer{
+    padding-top: 80px;
+    padding-bottom: 40px !important;
+    background:linear-gradient(rgba(9, 32, 50, 0.8), rgba(9, 32, 50, 0.8)) ,url(/img/bg_banner1.jpg) !important;
+   height: 320px !important;
+   width: 100% !important;
+   background-position: center !important;
+   background-size: cover !important;
+   text-align: center;
+}
+
+footer .navbar-brand{
+    color: #fff !important;
+}
+
+footer p{
+    color: #fff !important;
+}
+footer .social-link a{
+    margin: 5px !important;
+    margin-left: 5px !important;
+}
+
+.footer-top{
+    margin-bottom: 40px;
+}
+
+.footer-bottom{
+    margin-top: 40px;
+ 
+}
+
+.form-control:focus{
+    box-shadow: none !important;
+}
